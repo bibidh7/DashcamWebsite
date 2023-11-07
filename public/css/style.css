@@ -3,13 +3,84 @@
 .container {
     width: 80%;
 }
+.navbar{
+    background-color: #0B0C10 !important;
 
-.navbar-brand{
-    font-size: 2    rem !important;
-    font-family: 'Roboto', sans-serif;
 }
-.nav-link{
+.navbar-brand{
+    font-size: 2.5rem !important;
+    font-family:'Pacifico', cursive;
+    color: #FFFFFF !important;
+}
+.nav-item a{
     font-size: 1.25rem!important;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    color: #FFFFFF !important;
+
+}
+
+/* hero content */
+#hero-section{
+    background-color: #DAFFFB;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#hero-section p{
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: left;
+    line-height: 2;
+}
+.hero-img{
+    width: 100%;
+    height: auto;
+   
+}
+
+/* features section */
+#feature-section{
+    background-color: #176B87;
+    
+}
+
+#feature-section h3 {
+    color: #FFFFFF !important;
+}
+
+#feature-section p{
+      color: #FFFFFF !important;
+}
+
+/* contact us */
+#contact-us{
+    background-color: #DAFFFB;
+}
+.btn{
+    background-color: #176B87;
+    color: #FFFFFF;
+}
+.btn:hover{
+    background-color: #0B0C10;
+    color: #FFFFFF;
+
+}
+
+/* footer section */
+#footer{
+    background-color: #176B87;
+    color: #FFFFFF;
+}
+#footer p{
+    color: #FFFFFF;
+}
+
+@media (max-width: 576px){
+
+    #hero-section p{
+        font-size: 1rem;
+        line-height: normal;
+    }
+
+    
 }

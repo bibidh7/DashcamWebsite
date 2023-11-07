@@ -1,26 +1,89 @@
 <%- include('partials/header')%>
 
 <%- include('partials/navbar')%>
-<div class="container col-xl-10 col-xxl-8 px-4 py-5">
-    <div class="row align-items-center g-lg-5 py-5">
-      <div class="col-lg-7 text-center text-lg-start">
-        <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Vertically centered hero sign-up form</h1>
-        <p class="col-lg-10 fs-4">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
-      </div>
-      <div class="col-md-10 mx-auto col-lg-5">
-        <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" action="/message" method="POST">
-          <div class="mb-3">
-            <input type="email" class="form-control" id="exampleFormControlInput1" name= "email" placeholder="Enter your email here">
-          </div>
-          <div class="mb-3">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message" placeholder="Enter message here"></textarea>
-          </div>
-          <button class="w-100 btn btn-lg btn-primary" type="submit">Send Message</button>
-          <hr class="my-4">
-          <small class="text-body-secondary">By clicking Send Message, you agree to the terms of use.</small>
-        </form>
+<!-- Hero section -->
+<section id="hero-section">
+<div class="container py-5">
+  <div class="row">
+    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+      <div class="hero-description">
+        <p>
+          Dashcams, or dashboard cameras, have become increasingly important tools in today's world, offering a range of benefits that extend far beyond their initial purpose of recording the view of the road and surroundings while driving. These unassuming devices have gained widespread recognition for their significance in enhancing safety, fostering accountability, and providing valuable documentation.
+        </p>
       </div>
     </div>
-  </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="hero-img-size m-auto">
+        <img class="hero-img " src="/images/dashcam2.jpg" alt="hero-img">
+      </div>  
+      <!--    -->
+    </div>
 
+  </div>
+</div> 
+</section>
+
+<section id="feature-section">
+  <div class="container">
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 text-center ">
+    <div class="feature col">
+      <div class="py-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="3m" height="3em" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16">
+        <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/>
+        <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+      </svg>
+    </div>
+      <h3 class="fs-2 text-body-emphasis">Expert Installation</h3>
+      <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+      
+    </div>
+    <div class="feature col">
+      <div class="py-2 ">
+      <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+        <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+      </svg>
+    </div>
+      <h3 class="fs-2 text-body-emphasis">100% Satisfaction</h3>
+      <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+       </div>
+    <div class="feature col">
+    <div class="py-2">
+    
+      <svg class="" xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+      </svg>
+      <h3 class="fs-2 text-body-emphasis">Melbourne Wide</h3>
+      <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+    </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section id="contact-us">
+  
+<div class="container py-5">
+  <div class="row  text-center align-items-center">
+   
+    <div class="col-lg-8 col-sm-12">
+    
+      <h1>
+        Contact us for free quote.
+      </h1>
+    
+    </div>
+    <form class="col-lg-4 col-sm-12" action="/message" method="POST" >
+      <div class="mb-3">
+        <input type="email" class="form-control is-invalid" id="exampleFormControlInput1" name="email" placeholder="Enter your valid email address" required>
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" id="exampleFormControlTextarea1" name="message" placeholder="Enter your message" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn ">Success</button>
+
+  </form>
+  </div>
+</div>
+
+</section>
 <%- include('partials/footer') %>

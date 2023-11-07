@@ -2,13 +2,14 @@ require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 //const email = require("./handler/email")
-const nodemailer = require('nodemailer'); 
+const nodemailer = require('nodemailer');
+const path = require('path')
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 app.use(express.static("public"));
-
+app.use(express.static(path.join(__dirname, 'public')))
 app.get('/', (req, res) => {
     res.render('home');
 });
@@ -21,6 +22,7 @@ app.get('/contact', (req, res) => {
 app.post("/message", (req, res) => {
     const email = req.body.email;
     const message = req.body.message;
+    const success = true
         
     var transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -42,7 +44,7 @@ app.post("/message", (req, res) => {
       console.log(error);
     } else {
       console.log('Email sent: ' + info.response);
-      res.redirect("/");
+      res.render("home",{success: true});
     }
   });
 
